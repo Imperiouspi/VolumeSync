@@ -31,6 +31,10 @@
             this.VolSyncLog = new System.Diagnostics.EventLog();
             ((System.ComponentModel.ISupportInitialize)(this.VolSyncLog)).BeginInit();
             // 
+            // VolSyncLog
+            // 
+            this.VolSyncLog.EntryWritten += new System.Diagnostics.EntryWrittenEventHandler(this.VolSyncLog_EntryWritten);
+            // 
             // VolumeSync
             // 
             this.ServiceName = "VolumeSyncService";
